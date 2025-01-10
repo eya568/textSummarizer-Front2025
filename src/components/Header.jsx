@@ -3,7 +3,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { useNavigate } from 'react-router-dom';
+import { 
+  User, 
 
+} from 'lucide-react';
 const Header = () => {
   const { logout } = useAuth();
   const navigate = useNavigate();
@@ -23,7 +26,9 @@ const Header = () => {
             <path d="M6 6H42L36 24L42 42H6L12 24L6 6Z" fill="currentColor"></path>
           </svg>
         </div>
-        <h2 className="text-[#0d151c] text-lg font-bold leading-tight tracking-[-0.015em]">Summarize</h2>
+        <Link to="/">
+  <h2 className="text-[#0d151c] text-lg font-bold leading-tight tracking-[-0.015em]">Summarize</h2>
+</Link>
       </div>
       <div className="flex flex-1 justify-end gap-8">
         <div className="flex items-center gap-9">
@@ -36,8 +41,8 @@ const Header = () => {
             Logout
           </button>
         </div>
-    
-        <div className="w-10 h-10 bg-center bg-no-repeat bg-cover rounded-full" style={{ backgroundImage: 'url("https://cdn.usegalileo.ai/sdxl10/ebfdd10d-8c69-4a1a-b628-13f91d443dc0.png")' }}></div>
+
+       
       </div>
     </header>
   );

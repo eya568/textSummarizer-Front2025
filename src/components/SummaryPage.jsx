@@ -62,10 +62,7 @@ const SummaryPage = () => {
                 <Calendar className="w-4 h-4" />
                 <span>{createdDate}</span>
               </div>
-              <div className="flex items-center gap-2">
-                <Clock className="w-4 h-4" />
-                <span>{createdTime}</span>
-              </div>
+              
             </div>
             
             <div className="prose prose-slate max-w-none">
